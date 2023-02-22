@@ -3140,8 +3140,8 @@ components:
         english: english summary
         japanese: japanese summary
         owaspTopTen2017: "10"
-    DetectionMethod ResponseBody:
-      title: DetectionMethod ResponseBody
+    DetectionMethodResponseBody:
+      title: DetectionMethodResponseBody
       required:
       - name
       - reliabilityScore
@@ -5417,7 +5417,7 @@ components:
             userID: 1
             userName: user-name
           items:
-            $ref: '#/components/schemas/TaskComment ResponseBody'
+            $ref: '#/components/schemas/TaskCommentResponseBody'
         createdAt:
           type: string
           description: created time of task
@@ -5452,7 +5452,7 @@ components:
           - name: vuls
             reliabilityScore: 100
           items:
-            $ref: '#/components/schemas/DetectionMethod ResponseBody'
+            $ref: '#/components/schemas/DetectionMethodResponseBody'
         detectionTools:
           type: array
           description: DetectionTools of task
@@ -10835,7 +10835,7 @@ components:
             userID: 1
             userName: user-name
           items:
-            $ref: '#/components/schemas/TaskComment ResponseBody'
+            $ref: '#/components/schemas/TaskCommentResponseBody'
         createdAt:
           type: string
           description: created time of task
@@ -10872,7 +10872,7 @@ components:
           - name: vuls
             reliabilityScore: 100
           items:
-            $ref: '#/components/schemas/DetectionMethod ResponseBody'
+            $ref: '#/components/schemas/DetectionMethodResponseBody'
         detectionTools:
           type: array
           description: DetectionTools of task
@@ -11257,8 +11257,8 @@ components:
         subUserID: 1
         subUserName: sub-user-name
         updatedAt: 2018-07-14T08:13:28Z
-    TaskComment ResponseBody:
-      title: TaskComment ResponseBody
+    TaskCommentResponseBody:
+      title: TaskCommentResponseBody
       required:
       - comment
       - createdAt
@@ -11387,7 +11387,7 @@ components:
             userID: 1
             userName: user-name
           items:
-            $ref: '#/components/schemas/TaskComment ResponseBody'
+            $ref: '#/components/schemas/TaskCommentResponseBody'
         createdAt:
           type: string
           description: created time of task
@@ -11426,7 +11426,7 @@ components:
           - name: vuls
             reliabilityScore: 100
           items:
-            $ref: '#/components/schemas/DetectionMethod ResponseBody'
+            $ref: '#/components/schemas/DetectionMethodResponseBody'
         detectionTools:
           type: array
           description: DetectionTools of task
@@ -12635,7 +12635,7 @@ components:
           - name: vuls
             reliabilityScore: 100
           items:
-            $ref: '#/components/schemas/DetectionMethod ResponseBody'
+            $ref: '#/components/schemas/DetectionMethodResponseBody'
         detectionTools:
           type: array
           description: DetectionTools of task
@@ -13084,7 +13084,7 @@ components:
             userID: 1
             userName: user-name
           items:
-            $ref: '#/components/schemas/TaskComment ResponseBody'
+            $ref: '#/components/schemas/TaskCommentResponseBody'
         createdAt:
           type: string
           description: created time of task
@@ -13119,7 +13119,7 @@ components:
           - name: vuls
             reliabilityScore: 100
           items:
-            $ref: '#/components/schemas/DetectionMethod ResponseBody'
+            $ref: '#/components/schemas/DetectionMethodResponseBody'
         detectionTools:
           type: array
           description: DetectionTools of task
