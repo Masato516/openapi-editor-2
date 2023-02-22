@@ -2144,10 +2144,7 @@ components:
           description: Cve ID string of cve
           example: CVE-2018-1234
         cvss:
-          type: string
-          description: cvss of cve
-          format: binary
-          example: Vel sunt dolore.
+          $ref: '#/components/schemas/CvssResponseBody'
         cwes:
           type: array
           description: cwes of cve
@@ -2906,6 +2903,50 @@ components:
         vectorV3s:
           jvn: AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N
           nvd: AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N
+    CvssResponseBody:
+      title: CvssResponseBody
+      type: object
+      properties:
+        cveID:
+          type: string
+        maxCvssV2:
+          type: object
+          properties:
+            type:
+              type: string
+            value:
+              type: object
+              additionalProperties:
+                type: string
+        maxCvssV3:
+          type: object
+          properties:
+            type:
+              type: string
+            value:
+              type: object
+              additionalProperties:
+                type: string
+        vulnInfo:
+          properties:
+            alertDict:
+              type: object
+            ctis:
+              type: array
+              items:
+                type: string
+            cveContents:
+              type: object
+            cveID:
+              type: string
+            exploits:
+              type: array
+              items:
+                type: object
+            mitigations:
+              type: array
+              items:
+                type: object
     CweResponseBody:
       title: CweResponseBody
       required:
@@ -3147,10 +3188,7 @@ components:
           description: Cve ID string of cve
           example: CVE-2018-1234
         cvss:
-          type: string
-          description: cvss of cve
-          format: binary
-          example: Similique aut labore numquam nemo nesciunt.
+          $ref: '#/components/schemas/CvssResponseBody'
         cwes:
           type: array
           description: cwes of cve
@@ -5224,16 +5262,7 @@ components:
           description: CVE ID of task
           example: CVE-2017-6799
         cvss:
-          type: object
-          additionalProperties:
-            type: string
-            format: binary
-            example: Pariatur mollitia non quae ab cum.
-          description: Key Value of CveID and Cvss of task
-          example:
-            Officia et eos consectetur earum aut.: Et quo sunt.
-            Quia fugit corporis asperiores dolorem.: Et praesentium repellendus fugiat
-              nulla quam itaque.
+          $ref: '#/components/schemas/CvssResponseBody'
         deadlineOn:
           type: string
           description: DeadlineOn of task
@@ -10642,14 +10671,7 @@ components:
           description: CVE ID of task
           example: CVE-2017-6799
         cvss:
-          type: object
-          additionalProperties:
-            type: string
-            format: binary
-            example: Optio fuga voluptatem.
-          description: Key Value of CveID and Cvss of task
-          example:
-            Itaque qui vero ad enim corrupti.: Numquam quis repellat tempora corporis.
+          $ref: '#/components/schemas/CvssResponseBody'
         deadlineOn:
           type: string
           description: DeadlineOn of task
@@ -11194,16 +11216,7 @@ components:
           description: CVE ID of task
           example: CVE-2017-6799
         cvss:
-          type: object
-          additionalProperties:
-            type: string
-            format: binary
-            example: Dicta in explicabo.
-          description: Key Value of CveID and Cvss of task
-          example:
-            Consequuntur veniam tempore.: Dolorem modi nihil.
-            Magnam et cumque nobis.: Corrupti commodi dolor ducimus asperiores non.
-            Voluptatibus est voluptatem ex.: Sint at.
+          $ref: '#/components/schemas/CvssResponseBody'
         deadlineOn:
           type: string
           description: DeadlineOn of task
@@ -12891,14 +12904,7 @@ components:
           description: CVE ID of task
           example: CVE-2017-6799
         cvss:
-          type: object
-          additionalProperties:
-            type: string
-            format: binary
-            example: Nihil et odit enim non.
-          description: Key Value of CveID and Cvss of task
-          example:
-            Ea sit aspernatur.: Voluptates aliquid.
+          $ref: '#/components/schemas/CvssResponseBody'
         deadlineOn:
           type: string
           description: DeadlineOn of task
