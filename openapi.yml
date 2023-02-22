@@ -3043,8 +3043,7 @@ components:
           example: 10
         topicLastUpdatedAt:
           type: string
-          description: topicLastUpdatedAt of cve
-          format: date-time
+          description: topicLastUpdatedAt of cve (default value is "")
           example: 2018-07-14T08:13:28Z
         updatedAt:
           type: string
@@ -3806,8 +3805,7 @@ components:
           example: 10
         topicLastUpdatedAt:
           type: string
-          description: topicLastUpdatedAt of cve
-          format: date-time
+          description: topicLastUpdatedAt of cve (default value is "")
           example: 2018-07-14T08:13:28Z
         updatedAt:
           type: string
