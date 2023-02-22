@@ -593,7 +593,10 @@ paths:
             - risk_accepted
             - workaround
             - patch_applied
-          default: '["new","investigating","ongoing"]'
+          default:
+            - new
+            - investigating
+            - ongoing
       - name: filterPriority
         in: query
         description: Priority filter
@@ -1762,7 +1765,10 @@ paths:
             - risk_accepted
             - workaround
             - patch_applied
-          default: '["new","investigating","ongoing"]'
+          default:
+            - new
+            - investigating
+            - ongoing
       - name: filterPriority
         in: query
         description: Priority filter
