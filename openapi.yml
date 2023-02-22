@@ -49,11 +49,6 @@ paths:
         required: true
         schema:
           type: string
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -126,11 +121,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -161,11 +151,6 @@ paths:
         in: path
         description: Cve ID
         required: true
-        schema:
-          type: string
-      - name: Authorization
-        in: header
-        description: api key auth
         schema:
           type: string
       responses:
@@ -240,11 +225,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -278,11 +258,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -316,11 +291,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -394,11 +364,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -429,11 +394,6 @@ paths:
         in: path
         description: Server UUID
         required: true
-        schema:
-          type: string
-      - name: Authorization
-        in: header
-        description: api key auth
         schema:
           type: string
       responses:
@@ -469,11 +429,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -538,11 +493,6 @@ paths:
         description: ServerTagName filter
         schema:
           type: string
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -576,11 +526,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -714,11 +659,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -744,12 +684,6 @@ paths:
         description: Add Lockfile
         url: https://vuls.biz/
       operationId: lockfile#addLockfile
-      parameters:
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -796,11 +730,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -833,11 +762,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -883,11 +807,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -938,11 +857,6 @@ paths:
         description: Path filter
         schema:
           type: string
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -968,12 +882,6 @@ paths:
         description: Add cpe
         url: https://vuls.biz/
       operationId: pkgCpe#addCpe
-      parameters:
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1011,12 +919,6 @@ paths:
         description: Delete cpe Detail
         url: https://vuls.biz/
       operationId: pkgCpe#deleteCpe_deprecated
-      parameters:
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1054,11 +956,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1091,11 +988,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1120,11 +1012,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1197,11 +1084,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1235,11 +1117,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1272,11 +1149,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1322,11 +1194,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1371,11 +1238,6 @@ paths:
         description: CveID filter
         schema:
           type: string
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1401,12 +1263,6 @@ paths:
         description: Create Paste Server
         url: https://vuls.biz/
       operationId: server#createPkgPasteServer
-      parameters:
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1453,11 +1309,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1495,11 +1346,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1521,11 +1367,6 @@ paths:
         in: path
         description: Server UUID
         required: true
-        schema:
-          type: string
-      - name: Authorization
-        in: header
-        description: api key auth
         schema:
           type: string
       responses:
@@ -1561,11 +1402,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1598,11 +1434,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1648,11 +1479,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1708,11 +1534,6 @@ paths:
         description: ServerTagName filter
         schema:
           type: string
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1746,11 +1567,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
@@ -1783,11 +1599,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1834,11 +1645,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -1885,11 +1691,6 @@ paths:
         schema:
           type: integer
           format: int64
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       requestBody:
         content:
           application/json:
@@ -2027,11 +1828,6 @@ paths:
         schema:
           minimum: 1
           type: integer
-      - name: Authorization
-        in: header
-        description: api key auth
-        schema:
-          type: string
       responses:
         200:
           description: OK response.
