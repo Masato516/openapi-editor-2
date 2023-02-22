@@ -7,6 +7,8 @@ info:
     url: >-
       https://futurevuls.tayori.com/form/1dd23480d6f0f7a0dd066f03be8ed7d1b41d10e7
   version: v1
+schemes:
+  - https
 host: rest.vuls.biz
 consumes:
   - application/json
