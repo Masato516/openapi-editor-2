@@ -2923,8 +2923,6 @@ components:
               type: string
             value:
               type: object
-              additionalProperties:
-                type: string
         maxCvssV3:
           type: object
           properties:
@@ -2932,8 +2930,6 @@ components:
               type: string
             value:
               type: object
-              additionalProperties:
-                type: string
         vulnInfo:
           properties:
             alertDict:
