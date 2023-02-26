@@ -2931,6 +2931,7 @@ components:
             value:
               type: object
         vulnInfo:
+          type: object
           properties:
             alertDict:
               type: object
